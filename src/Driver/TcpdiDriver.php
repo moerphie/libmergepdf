@@ -14,7 +14,7 @@ final class TcpdiDriver implements DriverInterface
      */
     private $tcpdi;
 
-    public function __construct(\TCPDI $tcpdi = null)
+    public function __construct(?\TCPDI $tcpdi = null)
     {
         $this->tcpdi = $tcpdi ?: new \TCPDI;
     }

@@ -23,7 +23,7 @@ final class FileSource implements SourceInterface
      */
     private $pages;
 
-    public function __construct(string $filename, PagesInterface $pages = null)
+    public function __construct(string $filename, ?PagesInterface $pages = null)
     {
         if (!is_file($filename) || !is_readable($filename)) {
             throw new Exception("Invalid file '$filename'");

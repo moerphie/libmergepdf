@@ -22,7 +22,7 @@ final class RawSource implements SourceInterface
      */
     private $pages;
 
-    public function __construct(string $contents, PagesInterface $pages = null)
+    public function __construct(string $contents, ?PagesInterface $pages = null)
     {
         $this->contents = $contents;
         $this->pages = $pages ?: new Pages;

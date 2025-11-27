@@ -13,7 +13,7 @@ final class DefaultDriver implements DriverInterface
      */
     private $wrapped;
 
-    public function __construct(DriverInterface $wrapped = null)
+    public function __construct(?DriverInterface $wrapped = null)
     {
         $this->wrapped = $wrapped ?: new Fpdi2Driver;
     }
